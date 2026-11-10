@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-uyghur: "UKIJ Tuz", "UKIJ Tuz Tom", "ALKATIP Tor", "Noto Sans Arabic", "Scheherazade New", Tahoma, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-uyghur);
+    direction: rtl;
+    text-align: right;
+  }
+}
+
+/* Uyghur Paragraph Standard requested by user:
+   1. RTL
+   2. Justified text (ئوڭ سول تەرىپى تۈز تەڭشەلسۇن)
+   3. First line indented 2 characters (بىرىنچى قۇرى ئىككى ھەرىپ كېيىن باشلانسۇن)
+   4. High quality typography
+*/
+.uyghur-paragraph {
+  font-family: var(--font-uyghur);
+  direction: rtl;
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 2.1;
+  word-spacing: normal;
+  letter-spacing: 0;
+  overflow-wrap: break-word;
+}
+
+.uyghur-text {
+  font-family: var(--font-uyghur);
+  direction: rtl;
+}
+
+/* Custom scrollbar for audio waveforms, transcripts, and mobile touch */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}

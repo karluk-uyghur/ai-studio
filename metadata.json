@@ -1,0 +1,7 @@
+{
+  "name": "قارلۇق ۋىدىئو تەرجىمە قورالى (Qarluq Video Translator)",
+  "description": "ئۇيغۇر ئەدەبىي تىلىدا ئەلا سۈپەتلىك ۋىدىئو ۋە ماقالە تەرجىمىسى، سىياسىي-ھەربىي تەھلىل، ئاۋاز كىلونلاش ۋە سۈزۈش ئىقتىدارىغا ئىگە ئەقلىي ئىقتىدارلىق قورال.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
